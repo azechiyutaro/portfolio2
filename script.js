@@ -1,5 +1,5 @@
 
-particlesJS("particles-js",{
+particlesJS("particles.min.js",{
 	"particles":{
 		"number":{
 			"value":50,//この数値を変更するとホタルの数が増減できる
