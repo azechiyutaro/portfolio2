@@ -1,42 +1,38 @@
-particlesJS("particles-js", {
+
+particlesJS("particles-js",{
 	"particles":{
 		"number":{
-			"value":51,//この数値を変更すると桜の数が増減できる
+			"value":50,//この数値を変更するとホタルの数が増減できる
 			"density":{
 				"enable":true,
-				"value_area":1121.6780303333778
+				"value_area":1602.3971861905397
 			}
 		},
 		"color":{
-			"value":"#fff"
+			"value":"#f3fa8b"//色
 		},
 		"shape":{
-			"type":"image",
+			"type":"circle",//形状はcircleを指定
 			"stroke":{
 				"width":0,
-			},
-			"image":{
-				"src":"hana.png",
-				"width":120,
-				"height":120
 			}
 		},
 		"opacity":{
-			"value":0.06409588744762158,
-			"random":true,
+			"value":1,
+			"random":true,//透過をランダムに
 			"anim":{
 				"enable":false,
-				"speed":1,
-				"opacity_min":0.1,
+				"speed":1.10115236356258881,
+				"opacity_min":0,
 				"sync":false
 			}
 		},
 		"size":{
-			"value":8.011985930952697,
-			"random":true,
+			"value":4.005992965476349,
+			"random":true,//サイズをランダムに
 			"anim":{
-				"enable":false,
-				"speed":4,
+				"enable":true,
+				"speed":24.345709068776642,
 				"size_min":0.1,
 				"sync":false
 			}
@@ -46,16 +42,16 @@ particlesJS("particles-js", {
 		},
 		"move":{
 			"enable":true,
-			"speed":7,//この数値を小さくするとゆっくりな動きになる
-			"direction":"bottom-right",
-			"random":false,
-			"straight":false,
-			"out_mode":"out",
-			"bounce":false,
+			"speed":6,//この数値を小さくするとゆっくりな動きになる
+			"direction":"none",//方向指定なし
+			"random":true,//動きはランダムに
+			"straight":false,//動きをとどめない
+			"out_mode":"out",//画面の外に出るように描写
+			"bounce":false,//跳ね返りなし
 			"attract":{
 				"enable":false,
-				"rotateX":281.9177489524316,
-				"rotateY":127.670995809726
+				"rotateX":600,
+				"rotateY":600
 			}
 		}
 	},
@@ -63,13 +59,13 @@ particlesJS("particles-js", {
 		"detect_on":"canvas",
 		"events":{
 			"onhover":{
-				"enable":false,
+				"enable":false
 			},
 			"onclick":{
-				"enable":false,
+				"enable":false
 			},
 			"resize":true
 		}
 	},
-	"retina_detect":false
+	"retina_detect":true
 });
