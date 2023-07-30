@@ -24,7 +24,7 @@ body {
   }
   
   #wrapper p{
-    font-size: 3rem;
+    font-size: 5rem;
     padding-top: 20rem;
     margin-bottom: 20rem;
   }
@@ -148,7 +148,17 @@ body {
 #about{
     padding-top: 2;
     padding-bottom: 5rem;
+    padding-top: 3rem;
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+    background-image: url("white_00011.jpg");
+    background-size: cover;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 3rem;
 }
+
 
 #about h2{
     font-size: 3rem;
@@ -274,3 +284,60 @@ body {
       transform: rotate(3000deg);
     }
   }
+
+  .scrolldown2{
+  position:absolute;
+  bottom:10px;
+  left:50%;
+}
+
+.scrolldown2 span{
+  position: absolute;
+  left:10px;
+  bottom:10px;
+    color: #3E4550;
+    font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+.scrolldown2:before {
+    content: "";
+    position: absolute;
+    bottom:0;
+    left:-4px;
+  width:10px;
+  height:10px;
+  border-radius: 50%;
+  background: #3E4550;
+  animation:
+  circlemove 1.6s ease-in-out infinite,
+  cirlemovehide 1.6s ease-out infinite;
+}
+
+@keyframes circlemove{
+      0%{bottom:45px;}
+     100%{bottom:-5px;}
+ }
+
+@keyframes cirlemovehide{
+      0%{opacity:0}
+     50%{opacity:1;}
+    80%{opacity:0.9;}
+  100%{opacity:0;}
+ }
+
+.scrolldown2:after{
+  content:"";
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:2px;
+  height: 50px;
+  background: #3E4550;
+}
+
+
+
