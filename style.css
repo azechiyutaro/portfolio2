@@ -167,13 +167,12 @@ body {
     font-size: 1.5rem;
 }
 
-#about  p{
-    font-size: 1rem;
+#about p{
+    font-size: 1.1rem;
 }
 
 /*works*/
 #works {
-    /* 画面高さの80% */
     min-height: 80vh;
     display: grid;
     place-items: center;
@@ -200,18 +199,12 @@ body {
 }
 
 #works p{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .works-1 h1 img{
     margin-top: 2rem;
     width: 500px;
-}
-
-
-#work .works-3 h1 img{
-    margin-top: 2rem;
-    width: 50px;
 }
 
 
