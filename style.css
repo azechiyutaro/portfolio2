@@ -18,6 +18,23 @@ body {
     background-color: rgb(246, 246, 246);
   }
 
+@media screen and (max-width:480px) {
+body {
+    font-size: 16px;
+    line-height: 2em;
+    letter-spacing: 0.13em;
+    font-family: 'PT Sans','Noto Sans JP', sans-serif;
+    color: #3E4550;
+    overflow-x: hidden;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(246, 246, 246);
+  }
+}
+
+
 
   html{
     scroll-behavior: smooth;
@@ -140,28 +157,6 @@ body {
     transition: all 0.3s;
   }
   
-  @media (min-width: 769px) {
-    header {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    header h1 {
-      content: none;
-    }
-    header h1::after {
-      content: none;
-    }
-    header ul {
-      margin-top: 0;
-    }
-    header li {
-      display: flex;
-      align-items: center;
-    }
-  }
-
-
-
 
 /*about*/
 #about{
